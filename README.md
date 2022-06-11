@@ -1,4 +1,4 @@
-life is effor and i'll rest when i'm dead
+life is effort and i'll rest when i'm dead
 
 <!---
 anetzhammer/anetzhammer is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
