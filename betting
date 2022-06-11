@@ -1,7 +1,8 @@
-#THIS WILL NOT FACTOR IN THE JUICE --- DECIMAL ODDS != IMPLIED ODDS
-#Actual break even percentage(bep) will be slightly higher
+# DECIMAL ODDS != IMPLIED ODDS
 
-odds = input("Enter American sports betting odds ")
+
+# This calculates decimal odds and is basically useless.
+"""odds = input("Enter American sports betting odds ")
 fodds = float(odds)
 if fodds < 0:
   fodds = fodds * -1
@@ -9,4 +10,18 @@ if fodds < 0:
 else:
   fodds > 0
   bep = 1 + (fodds/100)
-print(f"{bep} %" + ' decimal odds')
+print(f"{bep} %" + '  decimal odds')"""
+
+
+
+# This one calculates implied probability and factors in the vig/juice.
+odds = input("Enter American sports betting odds ")
+fodds = float(odds)
+if fodds < 0:
+  fodds = fodds * -1
+  bep = fodds / (fodds + 100) * 100
+else:
+  fodds > 0
+  bep = 100 / (fodds + 100) * 100
+
+print(f"{bep} %")
