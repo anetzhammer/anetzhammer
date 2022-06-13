@@ -1,0 +1,8 @@
+#  a function that takes a decimal number representation of a signal and returns the analog voltage level that would be created by a DAC if it were given the same number in binary.
+
+value = input("input: ")
+fV = float(value)
+def V_DAC(fV):
+  return (fV / 204.6)
+result = V_DAC(fV)
+print(round(result, 2));
