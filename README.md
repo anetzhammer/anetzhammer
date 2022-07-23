@@ -1,3 +1,5 @@
+this is not a real project, just a collection of small programs
+
 life is effort and i'll rest when i'm dead
 
 <!---
